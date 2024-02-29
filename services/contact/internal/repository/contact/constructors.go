@@ -70,7 +70,6 @@ func (r *contactRepository) Delete(ctx context.Context, id int) error {
 		return err
 	}
 
-	// Выполнение запроса
 	defer stmt.Close()
 	_, err = stmt.ExecContext(ctx, id)
 	if err != nil {

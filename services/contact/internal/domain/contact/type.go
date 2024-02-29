@@ -14,7 +14,6 @@ type Contact struct {
 	Phone string `db:"phone"` // Имя
 }
 
-// GetFullName - метод для получения ФИО
 func (c *Contact) GetFullName() string {
 	return fmt.Sprintf("%s %s %s", c.FirstName, c.Email, c.Phone)
 }

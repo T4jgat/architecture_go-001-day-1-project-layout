@@ -6,7 +6,6 @@ import (
 )
 
 type ContactRepository interface {
-	// CRUD контакта
 	CreateContact(ctx context.Context, contact *contact.Contact) error
 	GetContact(ctx context.Context, id int) (*contact.Contact, error)
 	UpdateContact(ctx context.Context, contact *contact.Contact) error
